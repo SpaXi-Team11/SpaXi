@@ -3,12 +3,12 @@ import React, { Component } from 'react';
 const styleFooter = {
   height: 100,
   backgroundColor: '#5c5c5c'
-}
+};
 
 const styleCopyright = {
   color: '#ffffff',
   fontSize: '0.5em'
-}
+};
 
 export default class Footer extends Component {
   constructor(props) {
