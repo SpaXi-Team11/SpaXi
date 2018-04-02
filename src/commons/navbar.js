@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
-import brandLogo from '../assets/spaxi_brand_logo.svg';
+import brandLogo from '../assets/brand/spaxi_brand_logo.svg';
 
 export default class NavigationBar extends Component {
   constructor(props) {
