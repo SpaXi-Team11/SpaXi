@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
-import NavigationBar from './commons/Navbar'
-import Footer from './commons/Footer'
+import NavigationBar from './commons/Navbar';
+import Footer from './commons/Footer';
 
-import HomeScene from './scenes/home/HomeScene'
+import HomeScene from './scenes/home/HomeScene';
 
 class App extends Component {
   render() {

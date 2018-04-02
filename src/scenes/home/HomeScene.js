@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import MemberSection from './MemberSection'
+import MemberSection from './MemberSection';
 
 const styleTitle = {
   color: '#5c5c5c'
