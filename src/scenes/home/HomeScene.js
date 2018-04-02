@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import MemberSection from './MemberSection';
+import MemberSection from './MemberSection.js';
 
 export default class HomeScene extends Component {
   // constructor(props) {
