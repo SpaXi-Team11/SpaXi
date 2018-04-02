@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
+import { colorBrandDarkGrey } from './Constants.js';
 
 const styleFooter = {
   height: 100,
-  backgroundColor: '#5c5c5c'
+  backgroundColor: colorBrandDarkGrey
 };
 
 const styleCopyright = {
-  color: '#ffffff',
+  color: 'white',
   fontSize: '0.5em'
 };
 

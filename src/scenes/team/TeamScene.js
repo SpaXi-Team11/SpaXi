@@ -1,5 +1,11 @@
 import React, { Component } from 'react';
 
+import { fontSizeSectionHeader } from '../../commons/Constants';
+
+const styleTitle = {
+  fontSize: fontSizeSectionHeader
+}
+
 export default class TeamScene extends Component {
   // constructor(props) {
   //   super(props);
@@ -8,7 +14,7 @@ export default class TeamScene extends Component {
   render() {
     return (
       <div>
-        <p>The Developers</p>
+        <p style={styleTitle}>The Developers</p>
         <p>The Advisors</p>
       </div>
     );
