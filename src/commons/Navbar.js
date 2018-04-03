@@ -3,6 +3,8 @@ import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } f
 import brandLogo from '../assets/brand/spaxi_brand_logo.svg';
 import { colorBrandBlack } from './Constants';
 
+import { PATH } from './Path';
+
 const styleTab = {
   color: '#676767',
   fontSize: '1.2em'
@@ -33,13 +35,13 @@ export default class NavigationBar extends Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/about"><div style={styleTab}>About</div></NavLink>
+                <NavLink href={PATH.ABOUT}><div style={styleTab}>About</div></NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/features"><div style={styleTab}>Features</div></NavLink>
+                <NavLink href={PATH.FEATURES}><div style={styleTab}>Features</div></NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/team"><div style={styleTab}>Team</div></NavLink>
+                <NavLink href={PATH.TEAM}><div style={styleTab}>Team</div></NavLink>
               </NavItem>
             </Nav>
           </Collapse>
