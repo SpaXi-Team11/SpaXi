@@ -9,7 +9,7 @@ import AboutScene from './scenes/about/AboutScene';
 import FeatureScene from './scenes/features/FeatureScene';
 import TeamScene from './scenes/team/TeamScene';
 
-import { PATH } from './commons/Path';
+import { Path } from './commons/Path';
 
 class App extends Component {
   render() {
@@ -18,10 +18,10 @@ class App extends Component {
         <div className="App">
           <NavigationBar />
           <Switch>
-            <Route exact path={PATH.HOME} component={HomeScene} />
-            <Route path={PATH.ABOUT} component={AboutScene} />
-            <Route path={PATH.FEATURES} component={FeatureScene} />
-            <Route path={PATH.TEAM} component={TeamScene} />
+            <Route exact path={Path.HOME} component={HomeScene} />
+            <Route path={Path.ABOUT} component={AboutScene} />
+            <Route path={Path.FEATURES} component={FeatureScene} />
+            <Route path={Path.TEAM} component={TeamScene} />
           </Switch>
           <Footer />
         </div>

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 import brandLogo from '../assets/brand/spaxi_brand_logo.svg';
-import { colorBrandBlack } from './Constants';
+import { Theme } from './Theme';
 
-import { PATH } from './Path';
+import { Path } from './Path';
 
 const styleTab = {
   color: '#676767',
@@ -29,19 +29,19 @@ export default class NavigationBar extends Component {
   render() {
     return (
       <div>
-        <Navbar style={{backgroundColor: colorBrandBlack}} expand="md">
+        <Navbar style={{backgroundColor: Theme.COLOR_BRAND_BLACK}} expand="md">
           <NavbarBrand href="/"><img src={brandLogo} /></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href={PATH.ABOUT}><div style={styleTab}>About</div></NavLink>
+                <NavLink href={Path.ABOUT}><div style={styleTab}>About</div></NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href={PATH.FEATURES}><div style={styleTab}>Features</div></NavLink>
+                <NavLink href={Path.FEATURES}><div style={styleTab}>Features</div></NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href={PATH.TEAM}><div style={styleTab}>Team</div></NavLink>
+                <NavLink href={Path.TEAM}><div style={styleTab}>Team</div></NavLink>
               </NavItem>
             </Nav>
           </Collapse>

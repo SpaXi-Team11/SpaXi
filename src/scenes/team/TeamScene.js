@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
-import { fontSizeSectionHeader } from '../../commons/Constants';
+import { Theme } from '../../commons/Theme';
 
 const styleTitle = {
-  fontSize: fontSizeSectionHeader
+  fontSize: Theme.FONTSIZE_SECTION_HEADER
 }
 
 export default class TeamScene extends Component {
