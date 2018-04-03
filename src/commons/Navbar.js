@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+
 import brandLogo from '../assets/brand/spaxi_brand_logo.svg';
 import { Theme } from './Theme';
-
 import { Path } from './Path';
 
 const styleTab = {
@@ -30,7 +30,7 @@ export default class NavigationBar extends Component {
     return (
       <div>
         <Navbar style={{backgroundColor: Theme.COLOR_BRAND_BLACK}} expand="md">
-          <NavbarBrand href="/"><img src={brandLogo} /></NavbarBrand>
+          <NavbarBrand href="/"><img src={brandLogo} alt="brand-logo"/></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>

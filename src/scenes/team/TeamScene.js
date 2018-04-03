@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 
-import { Theme } from '../../commons/Theme';
-
-const styleTitle = {
-  fontSize: Theme.FONTSIZE_SECTION_HEADER
-}
+import Developers from './Developers';
+import Advisors from './Advisors';
+import Acknowledgement from './Acknowledgement';
+import DeveloperProfileSection from './DeveloperProfileSection'
 
 export default class TeamScene extends Component {
   // constructor(props) {
@@ -14,8 +13,10 @@ export default class TeamScene extends Component {
   render() {
     return (
       <div>
-        <p style={styleTitle}>The Developers</p>
-        <p>The Advisors</p>
+        <Developers />
+        <Advisors />
+        <Acknowledgement />
+        <DeveloperProfileSection /> //Shld be a container then use forloop generate each profile section
       </div>
     );
   }

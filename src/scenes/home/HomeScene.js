@@ -11,6 +11,7 @@ export default class HomeScene extends Component {
     return (
       <div>
         <MemberSection />
+        <div style={{backgroundColor:'#ffff00', height:'1000px'}}>For testing. To remove later</div>
       </div>
     );
   }
