@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Theme } from './Theme';
+import { Theme } from 'commons/theme/Theme';
 
 const styleFooter = {
   height: 100,

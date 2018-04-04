@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import { Theme } from 'commons/Theme';
-import { AdvisorDisplayPic } from 'assets/members/AdvisorDisplayPic';
+import { Theme } from 'commons/theme/Theme';
+import { AdvisorDisplayPic } from 'commons/image_objects/AdvisorDisplayPic';
 
 const styleTitle = {
   fontSize: Theme.FONTSIZE_SECTION_HEADER

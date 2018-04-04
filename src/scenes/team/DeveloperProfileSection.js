@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { DeveloperProfilePic } from 'assets/members/DeveloperProfilePic';
+import { DeveloperProfilePic } from 'commons/image_objects/DeveloperProfilePic';
 
 export default class DeveloperProfileSection extends Component {
   // constructor(props) {

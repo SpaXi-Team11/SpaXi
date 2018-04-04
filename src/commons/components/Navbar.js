@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 
 import brandLogo from 'assets/brand/spaxi_brand_logo.svg';
-import { Theme } from './Theme';
-import { Path } from './Path';
+import { Theme } from 'commons/theme/Theme';
+import { Path } from 'commons/paths/Path';
 
 const styleTab = {
   color: '#676767',
