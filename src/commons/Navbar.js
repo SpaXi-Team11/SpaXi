@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 
-import brandLogo from '../assets/brand/spaxi_brand_logo.svg';
+import brandLogo from 'assets/brand/spaxi_brand_logo.svg';
 import { Theme } from './Theme';
 import { Path } from './Path';
 
