@@ -13,13 +13,13 @@ export default class DeveloperProfileSection extends Component {
 
   render() {
     return (
-      <div className="row">
-        <div className="col">
-          <img src={this.props.image} style={{height:'35em', width:'35em'}} />
+      <div className="row" style={{paddingTop: '5em', paddingBottom: '5em'}}>
+        <div className="col 1g-6">
+          <img src={this.props.image} style={{height:'100%', width:'100%'}} />
           { this.props.github && <GitHubButton url={this.props.github} /> }
           { this.props.linkedin && <LinkedInButton url={this.props.linkedin} /> }
         </div>
-        <div className="col">
+        <div className="col 1g-6">
           <h1>{this.props.name}</h1>
           <h3>{this.props.role}</h3>
           <p>{this.props.children}</p>
