@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -27,3 +28,11 @@ export default class DeveloperProfileSection extends Component {
     );
   }
 }
+
+DeveloperProfileSection.propTypes = {
+  name: PropTypes.string.isRequired,
+  role: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  github: PropTypes.string,
+  linkedin: PropTypes.string
+};
