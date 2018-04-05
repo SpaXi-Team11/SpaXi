@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import { Path } from 'commons/paths/Path';
 import NavigationBar from 'commons/components/navbar/Navbar';
 import Footer from 'commons/components/footer/Footer';
@@ -14,16 +16,18 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <div className="App">
-          <NavigationBar />
-          <Switch>
-            <Route exact path={Path.HOME} component={HomeScene} />
-            <Route path={Path.ABOUT} component={AboutScene} />
-            <Route path={Path.FEATURES} component={FeatureScene} />
-            <Route path={Path.TEAM} component={TeamScene} />
-            <Route path={Path.PAGE_NOT_FOUND} component={PageNotFound} />
-          </Switch>
-          <Footer />
+        <div>
+          <header><NavigationBar /></header>
+          <body className="container">
+            <Switch>
+              <Route exact path={Path.HOME} component={HomeScene} />
+              <Route path={Path.ABOUT} component={AboutScene} />
+              <Route path={Path.FEATURES} component={FeatureScene} />
+              <Route path={Path.TEAM} component={TeamScene} />
+              <Route path={Path.PAGE_NOT_FOUND} component={PageNotFound} />
+            </Switch>
+          </body>
+          <footer><Footer /></footer>
         </div>
       </BrowserRouter>
     );

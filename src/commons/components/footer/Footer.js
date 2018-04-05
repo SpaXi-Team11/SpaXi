@@ -2,8 +2,11 @@ import React, { Component } from 'react';
 import { Theme } from 'commons/theme/Theme';
 
 const styleFooter = {
-  height: 100,
-  backgroundColor: Theme.COLOR_BRAND_DARKGREY
+  height: '3em',
+  backgroundColor: Theme.COLOR_BRAND_DARKGREY,
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center'
 };
 
 const styleCopyright = {
@@ -19,7 +22,7 @@ export default class Footer extends Component {
   render() {
     return (
       <div style={styleFooter}>
-        <p style={styleCopyright}>&copy;2017 Semester 1 CS3201 Software Engineering Project Team 11</p>
+        <p style={styleCopyright}>&copy; 2017 Semester 1 CS3201 Software Engineering Project Team 11</p>
       </div>
     );
   }
