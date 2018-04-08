@@ -15,10 +15,39 @@ $PADDING_RIGHT: 10%;
 $PADDING_TOP: 5%;
 $PADDING_BOTTOM: 5%;
 
+@mixin breakpoint($size) {
+  @if $size == xs {
+    @media (max-width: 576px) {@content;}
+  }
+  @else if $size == sm {
+    @media (max-width: 768px) {@content;}
+  }
+  @else if $size == md {
+    @media (min-width: 769px) {@content;}
+  }
+  @else if $size == lg {
+    @media (min-width: 992px) {@content;}
+  }
+  @else if $size == xl {
+    @media (min-width: 1200px) {@content;}
+  }
+}
+
+@mixin section-header-font-size {
+  font-size: 2em;
+  // @media (max-width: 767px) {@content;}
+  @media (min-width: 768px) {
+    font-size: 3em;
+  }
+  @media (min-width: 992px) {
+    font-size: 4em;
+  }
+}
+
 .theme__section-header {
   font-family: $FONT_FORMAL;
   color: $COLOR_BRAND_BLACK;
-  font-size: $FONT_SIZE_SECTION_HEADER;
+  @include section-header-font-size;
   font-weight: $FONT_WEIGHT_BOLD;
 }
 

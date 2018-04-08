@@ -36,6 +36,10 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @include breakpoint(xs) {
+      flex-direction: column;
+    }
   }
 }
 
@@ -43,12 +47,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: $PADDING_TOP $PADDING_LEFT;
-  border-style: solid;
 
   .left {
     display: flex;
     flex-direction: column;
-    border-style: solid;
 
     img {
       width: 75%;
@@ -72,6 +74,29 @@
     justify-content: center;
     padding-left: 2%;
     padding-right: 2%;
-    border-style: solid;
+
+    h1 {
+      color: $COLOR_BRAND_BLACK;
+      font-family: $FONT_FORMAL;
+      font-weight: $FONT_WEIGHT_BOLD;
+    }
+
+    h4 {
+      color: $COLOR_BRAND_DARK_GREY;
+    }
+  }
+
+  @include breakpoint(sm) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr;
+
+    .left img {
+      width: 100%;
+      height: auto;
+    }
+
+    .right {
+      justify-content: flex-start;
+    }
   }
 }

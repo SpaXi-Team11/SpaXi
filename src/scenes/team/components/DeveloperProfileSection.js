@@ -24,8 +24,8 @@ export default class DeveloperProfileSection extends Component {
           </div>
         </div>
         <div className="right">
-          <h1 className="theme__section-header">{this.props.name}</h1>
-          <h3 className="theme__section-subheader">{this.props.role}</h3>
+          <h1>{this.props.name}</h1>
+          <h4>{this.props.role}</h4>
           <p>{this.props.children}</p>
         </div>
       </div>

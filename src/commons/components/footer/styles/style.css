@@ -3,8 +3,14 @@
 .theme__section-header {
   font-family: "Lato";
   color: #333333;
-  font-size: 4em;
+  font-size: 2em;
   font-weight: 700; }
+  @media (min-width: 768px) {
+    .theme__section-header {
+      font-size: 3em; } }
+  @media (min-width: 992px) {
+    .theme__section-header {
+      font-size: 4em; } }
 
 .theme__section-subheader {
   color: #5C5C5C; }
