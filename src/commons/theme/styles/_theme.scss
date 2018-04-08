@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Jaldi:400,700');
+
+$FONT_FORMAL: 'Lato';
+$FONT_CASUAL: 'Jaldi';
+$FONT_WEIGHT_BOLD: 700;
+$FONT_SIZE_SECTION_HEADER: 4em;
+
+$COLOR_BRAND_BLACK: #333333;
+$COLOR_BRAND_DARK_GREY: #5C5C5C;
+$COLOR_BRAND_GREEN: #2FB1AE;
+
+$PADDING_LEFT: 10%;
+$PADDING_RIGHT: 10%;
+$PADDING_TOP: 5%;
+$PADDING_BOTTOM: 5%;
+
+.theme__section-header {
+  font-family: $FONT_FORMAL;
+  color: $COLOR_BRAND_BLACK;
+  font-size: $FONT_SIZE_SECTION_HEADER;
+  font-weight: $FONT_WEIGHT_BOLD;
+}

@@ -1,0 +1,17 @@
+@import "commons/theme/styles/theme";
+
+.footer {
+  height: 50px;
+  background-color: $COLOR_BRAND_DARK_GREY;
+  display: flex;
+  justify-content: center;
+
+  p {
+    color: white;
+    font-size: 0.5em;
+    height: 0;
+    text-align: center;
+    position: relative;
+    top: 50%;
+  }
+}

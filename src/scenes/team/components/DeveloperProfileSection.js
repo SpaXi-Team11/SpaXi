@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'scenes/team/styles/style.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// <div className="row" style={{paddingTop: '5em', paddingBottom: '5em'}}>
 
 import GitHubButton from 'commons/components/buttons/GitHubButton';
 import LinkedInButton from 'commons/components/buttons/LinkedInButton';
@@ -13,14 +15,16 @@ export default class DeveloperProfileSection extends Component {
 
   render() {
     return (
-      <div className="row" style={{paddingTop: '5em', paddingBottom: '5em'}}>
-        <div className="col 1g-6">
-          <img src={this.props.image} style={{height:'100%', width:'100%'}} />
-          { this.props.github && <GitHubButton url={this.props.github} /> }
-          { this.props.linkedin && <LinkedInButton url={this.props.linkedin} /> }
+      <div className="developer-profile-section">
+        <div className="left">
+          <img src={this.props.image} />
+          <div className="social-media">
+            { this.props.github && <GitHubButton url={this.props.github} className="button" /> }
+            { this.props.linkedin && <LinkedInButton url={this.props.linkedin} className="button" /> }
+          </div>
         </div>
-        <div className="col 1g-6">
-          <h1>{this.props.name}</h1>
+        <div className="right">
+          <h1 className="theme__section-header">{this.props.name}</h1>
           <h3>{this.props.role}</h3>
           <p>{this.props.children}</p>
         </div>

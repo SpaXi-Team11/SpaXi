@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { Path } from 'commons/paths/Path';
 import NavigationBar from 'commons/components/navbar/Navbar';
@@ -18,7 +18,7 @@ class App extends Component {
       <BrowserRouter>
         <div>
           <header><NavigationBar /></header>
-          <body className="container">
+          <body>
             <Switch>
               <Route exact path={Path.HOME} component={HomeScene} />
               <Route path={Path.ABOUT} component={AboutScene} />

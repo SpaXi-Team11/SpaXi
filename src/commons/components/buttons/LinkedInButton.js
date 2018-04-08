@@ -9,7 +9,7 @@ export default class LinkedInButton extends Component {
 
   render() {
     return (
-      <a href={this.props.url} target="_blank">
+      <a href={this.props.url} target="_blank" className={this.props.className}>
         <svg width="142" height="44" viewBox="0 0 142 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
         <g id="linkedInButtonCanvas" transform="translate(-4031 -3766)">
           <g id="linkedInButton">

@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
 
-import { Theme } from 'commons/theme/Theme';
+import 'scenes/team/styles/style.css';
 import { DeveloperDisplayPic } from 'commons/image_objects/DeveloperDisplayPic';
-
-const styleTitle = {
-  fontSize: Theme.FONTSIZE_SECTION_HEADER
-}
 
 export default class Developers extends Component {
   // constructor(props) {
@@ -15,7 +11,7 @@ export default class Developers extends Component {
   render() {
     return (
       <div>
-        <h1 style={styleTitle}>Developers</h1>
+        <h1 className="theme__section-header">Developers</h1>
         <img src={DeveloperDisplayPic.AKANKSHITA} />
         <img src={DeveloperDisplayPic.MARCUS} />
         <img src={DeveloperDisplayPic.PING_CHAN} />

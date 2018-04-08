@@ -11,7 +11,7 @@ export default class GitHubButton extends Component {
 
   render() {
     return (
-      <a href={this.props.url} target="_blank">
+      <a href={this.props.url} target="_blank" className={this.props.className}>
         <svg width="130" height="44" viewBox="0 0 130 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
         <g id="gitHubButtonCanvas" transform="translate(-4032 -3827)">
           <g id="gitHubButton">

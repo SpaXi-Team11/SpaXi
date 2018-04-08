@@ -1,0 +1,38 @@
+@import "commons/theme/styles/theme";
+
+.developer-profile-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: $PADDING_TOP $PADDING_LEFT;
+  border-style: solid;
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+
+    img {
+      width: 75%;
+      height: auto;
+    }
+
+    .social-media {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+
+      .button {
+        padding-right: 1px;
+      }
+    }
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-style: solid;
+  }
+}
