@@ -12,11 +12,32 @@
 .acknowledgement {
   padding: 5% 10%; }
 
+.advisor-profile-cell img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.advisor-profile-cell h3 {
+  text-align: center;
+  font-family: "Lato";
+  font-weight: 700;
+  color: #333333; }
+
+.advisor-profile-cell h5 {
+  text-align: center;
+  font-family: "Lato";
+  color: #5C5C5C; }
+
 .advisors {
   padding-top: 0;
   padding-bottom: 5%;
   padding-left: 10%;
   padding-right: 10%; }
+  .advisors .display-cell {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; }
 
 .developer-profile-section {
   display: grid;
