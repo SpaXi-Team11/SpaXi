@@ -1,0 +1,11 @@
+@import "commons/theme/styles/theme";
+
+.home-banner {
+  background-image: url(../../../assets/banner/binary_girl.png);
+  height:550px;
+  width: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}

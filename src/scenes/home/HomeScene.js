@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
-import MemberSection from './MemberSection';
+import HomeBanner from './components/HomeBanner';
+import MemberSection from './components/MemberSection';
 
 export default class HomeScene extends Component {
   // constructor(props) {
@@ -10,8 +11,8 @@ export default class HomeScene extends Component {
   render() {
     return (
       <div>
+        <HomeBanner />
         <MemberSection />
-        <div style={{backgroundColor:'#ffff00', height:'1000px'}}>For testing. To remove later</div>
       </div>
     );
   }
