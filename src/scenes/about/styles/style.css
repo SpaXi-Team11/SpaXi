@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i");
+@import url("https://fonts.googleapis.com/css?family=Jaldi:400,700");
+.theme__section-header {
+  font-family: "Lato";
+  color: #333333;
+  font-size: 2em;
+  font-weight: 700; }
+  @media (min-width: 768px) {
+    .theme__section-header {
+      font-size: 3em; } }
+  @media (min-width: 992px) {
+    .theme__section-header {
+      font-size: 4em; } }
+
+.theme__section-subheader {
+  color: #5C5C5C; }
+
+.project-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 5% 10%; }
+  .project-header img {
+    width: 90%;
+    height: auto; }
+  .project-header .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .project-header .right h2 {
+      color: #333333;
+      font-family: "Lato";
+      font-weight: 700; }
+    .project-header .right h5 {
+      color: #5C5C5C; }
+  @media (max-width: 768px) {
+    .project-header {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr; } }
+
+.project-summary {
+  padding: 5% 10%; }

@@ -15,7 +15,7 @@ export default class DeveloperProfileSection extends Component {
 
   render() {
     return (
-      <div className="developer-profile-section">
+      <div id={this.props.id} className="developer-profile-section">
         <div className="left">
           <img src={this.props.image} />
           <div className="social-media">
@@ -34,6 +34,7 @@ export default class DeveloperProfileSection extends Component {
 }
 
 DeveloperProfileSection.propTypes = {
+  id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   role: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,

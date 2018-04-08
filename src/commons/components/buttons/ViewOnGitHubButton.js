@@ -9,7 +9,7 @@ export default class ViewOnGitHubButton extends Component {
 
   render() {
     return (
-      <a href={this.props.url} target="_blank">
+      <a href={this.props.url} target="_blank" className={this.props.className}>
         <svg width="207" height="44" viewBox="0 0 207 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
           <g id="viewOnGitHubButtonCanvas" transform="translate(-4199 -3825)">
             <g id="viewOnGitHubButton">
