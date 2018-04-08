@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-
-import Developers from './components/Developers';
-import Advisors from './components/Advisors';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Acknowledgement from './components/Acknowledgement';
+import Advisors from './components/Advisors';
+import TooltipBanner from 'commons/components/tooltip_banner/TooltipBanner';
 
 import DeveloperProfileSection from './components/DeveloperProfileSection';
 import { DeveloperDisplayPic } from 'commons/image_objects/DeveloperDisplayPic'; {/*temp, shld import profile pic instead*/}
@@ -18,9 +17,9 @@ export default class TeamScene extends Component {
   render() {
     return (
       <div>
-        <Developers />
-        <Advisors />
         <Acknowledgement />
+        <Advisors />
+        <TooltipBanner>Meet our developers</TooltipBanner>
         <DeveloperProfileSection name="Akankshita Dash" role="Documentation • Query Validator • Result Formatter" image={DeveloperDisplayPic.AKANKSHITA} github="https://github.com/akd13" linkedin="https://www.linkedin.com/in/akankshita-dash-b0a0b1115">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed justo eros, sollicitudin non aliquam eu, facilisis ac purus. Etiam id blandit augue. Proin consectetur, ante nec posuere sagittis, felis turpis ornare magna, in maximus enim ex nec lorem. Nunc sollicitudin purus felis, ac dignissim nisi iaculis quis. Sed molestie pulvinar quam a fringilla. Curabitur magna odio, dictum sed ultricies ut, finibus eu dui. Vivamus laoreet tristique ex, quis blandit velit fermentum et. Proin quis dolor non nisl maximus sollicitudin. Mauris ex nulla, pretium eget dui sit amet, pharetra viverra sem. Donec dignissim, arcu non varius consequat, magna velit posuere ipsum, id viverra ante felis blandit tortor. Sed in nunc ultricies, malesuada lorem eu, condimentum augue. Etiam sollicitudin facilisis dignissim. Phasellus quis orci condimentum, consequat arcu sit amet, laoreet quam. Donec a pretium lacus, et auctor ex. Nullam egestas tempor dolor, sit amet aliquam turpis bibendum sit amet. Donec non cursus.
         </DeveloperProfileSection>

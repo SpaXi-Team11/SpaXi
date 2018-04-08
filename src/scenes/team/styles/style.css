@@ -6,6 +6,18 @@
   font-size: 4em;
   font-weight: 700; }
 
+.theme__section-subheader {
+  color: #5C5C5C; }
+
+.acknowledgement {
+  padding: 5% 10%; }
+
+.advisors {
+  padding-top: 0;
+  padding-bottom: 5%;
+  padding-left: 10%;
+  padding-right: 10%; }
+
 .developer-profile-section {
   display: grid;
   grid-template-columns: 1fr 1fr;

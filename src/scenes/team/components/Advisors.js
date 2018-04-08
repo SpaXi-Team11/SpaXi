@@ -10,7 +10,7 @@ export default class Advisors extends Component {
 
   render() {
     return (
-      <div>
+      <div className="advisors">
         <h1 className="theme__section-header">Advisors</h1>
         <img src={AdvisorDisplayPic.ZHAO_JIN} />
         <img src={AdvisorDisplayPic.CRISTINA} />

@@ -1,0 +1,27 @@
+@import "commons/theme/styles/theme";
+
+.tooltip-banner {
+  height: 7em;
+  width: 100%;
+  background-color: $COLOR_BRAND_BLACK;
+  position: relative;
+
+  p {
+    color: white;
+    font-size: 3em;
+    font-weight: $FONT_WEIGHT_BOLD;
+    font-family: $FONT_CASUAL;
+    text-align: center;
+  }
+
+  .inverted-triangle {
+    width: 0;
+    height: 0;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-top: 50px solid $COLOR_BRAND_BLACK;
+    position: absolute;
+    top: 80%;
+    left: 47%;
+  }
+}
