@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import 'scenes/about/styles/style.css';
-import screenshot from 'assets/brand/spaxi_welcome_screen.png';
+import computer from 'assets/brand/spaxi_in_computer.png';
 
 export default class ProjectHeader extends Component {
   // constructor(props) {
@@ -11,7 +11,7 @@ export default class ProjectHeader extends Component {
   render() {
     return (
       <div class="project-header">
-        <img src={screenshot} alt="screenshot"/>
+        <img src={computer} alt="screenshot"/>
         <div class="right">
           <h2>SpaXi - The Static Program Analyzer</h2>
           <h5>Aug 2017 - Nov 2017</h5>
