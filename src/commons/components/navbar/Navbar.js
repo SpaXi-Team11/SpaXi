@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import './styles/style.css';
 
 import brandLogo from 'assets/brand/spaxi_brand_logo.svg';
 import { Theme } from 'commons/theme/Theme';
 import { Path } from 'commons/paths/Path';
-import Navtab from 'commons/components/navbar/Navtab';
+import Navtab from 'commons/components/navbar/components/Navtab';
 
 export default class NavigationBar extends Component {
   constructor(props) {
@@ -24,8 +27,8 @@ export default class NavigationBar extends Component {
 
   render() {
     return (
-      <div>
-        <Navbar style={{backgroundColor: Theme.COLOR_BRAND_BLACK}} expand="md">
+      <div className="navigation-bar">
+        <Navbar expand="md">
           <NavbarBrand href="/"><img src={brandLogo} alt="brand-logo"/></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>

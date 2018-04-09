@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
 
 import { Path } from 'commons/paths/Path';
 import NavigationBar from 'commons/components/navbar/Navbar';
@@ -16,9 +16,9 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <div>
-          <header><NavigationBar /></header>
-          <body>
+        <div className="app-wrapper">
+          <NavigationBar />
+          <div className="app-content">
             <Switch>
               <Route exact path={Path.HOME} component={HomeScene} />
               <Route path={Path.ABOUT} component={AboutScene} />
@@ -26,8 +26,8 @@ class App extends Component {
               <Route path={Path.TEAM} component={TeamScene} />
               <Route path={Path.PAGE_NOT_FOUND} component={PageNotFound} />
             </Switch>
-          </body>
-          <footer><Footer /></footer>
+          </div>
+          <Footer />
         </div>
       </BrowserRouter>
     );

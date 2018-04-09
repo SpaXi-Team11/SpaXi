@@ -10,7 +10,7 @@ export default class Footer extends Component {
   render() {
     return (
       <div className="footer">
-        <p>&copy; 2017 Semester 1 CS3201 Software Engineering Project Team 11</p><br />
+        <p>&copy; 2017 Semester 1 CS3201 Software Engineering Project Team 11</p>
       </div>
     );
   }

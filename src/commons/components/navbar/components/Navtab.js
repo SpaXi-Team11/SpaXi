@@ -16,7 +16,7 @@ export default class Navtab extends Component {
   render() {
     return (
       <NavItem>
-        <NavLink href={this.props.path}><div style={styleTab}>{this.props.title}</div></NavLink>
+        <NavLink href={this.props.path}><span>{this.props.title}</span></NavLink>
       </NavItem>
     );
   }
