@@ -23,3 +23,28 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative; }
+
+.member-section {
+  display: grid;
+  grid-template-areas: "title title title" "a b c" "d e f";
+  grid-gap: 0;
+  justify-content: center;
+  padding-top: 5%;
+  padding-bottom: 5%; }
+  .member-section h1 {
+    grid-area: title;
+    color: #5C5C5C;
+    font-family: "Jaldi";
+    font-weight: 700;
+    font-size: 5em;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 5%; }
+  @media (max-width: 576px) {
+    .member-section {
+      grid-template-areas: "title" "a" "b" "c" "d" "e" "f";
+      padding-bottom: 0; }
+      .member-section h1 {
+        font-size: 4em; }
+      .member-section .member-cell img {
+        width: 100vw; } }

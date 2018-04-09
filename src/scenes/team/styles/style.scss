@@ -89,10 +89,11 @@
   @include breakpoint(sm) {
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 1fr;
+    padding-left: 0;
+    padding-right: 0;
 
     .left img {
-      width: 100%;
-      height: auto;
+      width: 100vw;
     }
 
     .right {

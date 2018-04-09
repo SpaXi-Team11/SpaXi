@@ -9,3 +9,44 @@
   background-size: cover;
   position: relative;
 }
+
+.member-section {
+  display: grid;
+  grid-template-areas:
+    "title title title"
+    "a b c"
+    "d e f";
+  grid-gap: 0;
+  justify-content: center;
+  padding-top:$PADDING_TOP;
+  padding-bottom: $PADDING_BOTTOM;
+
+  h1 {
+    grid-area: title;
+    color: $COLOR_BRAND_DARK_GREY;
+    font-family: $FONT_CASUAL;
+    font-weight: $FONT_WEIGHT_BOLD;
+    font-size: 5em;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 5%;
+  }
+
+  .member-cell {
+  }
+
+  @include breakpoint(xs) {
+    grid-template-areas: "title" "a" "b" "c" "d" "e" "f";
+    padding-bottom: 0;
+    
+    h1 {
+      font-size: 4em;
+    }
+
+    .member-cell {
+      img {
+        width: 100vw;
+      }
+    }
+  }
+}

@@ -79,9 +79,10 @@
   @media (max-width: 768px) {
     .developer-profile-section {
       grid-template-columns: 1fr;
-      grid-template-rows: 0.5fr 1fr; }
+      grid-template-rows: 0.5fr 1fr;
+      padding-left: 0;
+      padding-right: 0; }
       .developer-profile-section .left img {
-        width: 100%;
-        height: auto; }
+        width: 100vw; }
       .developer-profile-section .right {
         justify-content: flex-start; } }
