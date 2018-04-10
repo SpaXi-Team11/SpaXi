@@ -1,13 +1,6 @@
 import React, { Component } from 'react';
 import { NavItem, NavLink } from 'reactstrap';
 
-import { Theme } from 'commons/theme/Theme';
-
-const styleTab = {
-  color: '#676767',
-  fontSize: '1.2em'
-}
-
 export default class Navtab extends Component {
   constructor(props) {
     super(props);

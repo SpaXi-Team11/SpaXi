@@ -13,13 +13,14 @@
       font-size: 4em; } }
 
 .theme__section-subheader {
-  color: #5C5C5C; }
+  color: #6B6A6A; }
 
 .project-header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 5% 10%;
-  background-color: #EBEBEB; }
+  background-color: #80DDD9;
+  height: 100vh; }
   .project-header img {
     width: 100%;
     height: auto;
@@ -29,22 +30,28 @@
   .project-header .right {
     display: flex;
     flex-direction: column;
-    justify-content: center; }
+    justify-content: center;
+    padding-left: 10%; }
     .project-header .right h2 {
       color: #333333;
       font-family: "Lato";
       font-weight: 700; }
     .project-header .right h5 {
-      color: #5C5C5C; }
+      color: #6B6A6A; }
   @media (max-width: 768px) {
     .project-header {
       display: flex;
       flex-direction: column; }
       .project-header img {
-        width: 100%; }
+        width: 100%;
+        margin-top: auto;
+        margin-bottom: 0;
+        padding-bottom: 5%; }
       .project-header .right {
         align-items: center;
-        text-align: center; } }
+        text-align: center;
+        margin-bottom: auto;
+        padding-left: 0; } }
 
 .project-summary {
   padding: 5% 10%; }

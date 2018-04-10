@@ -20,6 +20,7 @@
   justify-content: center;
   padding-top:$PADDING_TOP;
   padding-bottom: $PADDING_BOTTOM;
+  min-height: 100vh;
 
   h1 {
     grid-area: title;
@@ -38,7 +39,7 @@
   @include breakpoint(xs) {
     grid-template-areas: "title" "a" "b" "c" "d" "e" "f";
     padding-bottom: 0;
-    
+
     h1 {
       font-size: 4em;
     }

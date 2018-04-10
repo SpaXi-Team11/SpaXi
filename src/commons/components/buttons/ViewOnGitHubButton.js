@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-import { Theme } from 'commons/theme/Theme';
-
 export default class ViewOnGitHubButton extends Component {
   constructor(props) {
     super(props);

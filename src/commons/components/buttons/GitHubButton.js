@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-import { Theme } from 'commons/theme/Theme';
-
 // Gap is 40
 
 export default class GitHubButton extends Component {

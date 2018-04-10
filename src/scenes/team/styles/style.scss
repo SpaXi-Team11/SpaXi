@@ -47,6 +47,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: $PADDING_TOP $PADDING_LEFT;
+  min-height: 100vh;
+  min-width: 100vw;
 
   .left {
     display: flex;
@@ -71,9 +73,6 @@
   .right {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding-left: 2%;
-    padding-right: 2%;
 
     h1 {
       color: $COLOR_BRAND_BLACK;
@@ -98,6 +97,8 @@
 
     .right {
       justify-content: flex-start;
+      padding-left: 2%;
+      padding-right: 2%;
     }
   }
 }

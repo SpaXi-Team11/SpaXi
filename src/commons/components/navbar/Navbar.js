@@ -5,7 +5,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/style.css';
 
 import brandLogo from 'assets/brand/spaxi_brand_logo.svg';
-import { Theme } from 'commons/theme/Theme';
 import { Path } from 'commons/paths/Path';
 import Navtab from 'commons/components/navbar/components/Navtab';
 
