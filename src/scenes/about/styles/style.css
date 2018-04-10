@@ -54,4 +54,5 @@
         padding-left: 0; } }
 
 .project-summary {
-  padding: 5% 10%; }
+  padding: 5% 10%;
+  text-align: justify; }

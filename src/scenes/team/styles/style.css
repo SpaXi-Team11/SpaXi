@@ -16,7 +16,11 @@
   color: #6B6A6A; }
 
 .acknowledgement {
-  padding: 5% 10%; }
+  padding: 5% 10%;
+  text-align: justify; }
+  @media (max-width: 576px) {
+    .acknowledgement {
+      min-height: 100vh; } }
 
 .advisor-profile-cell img {
   display: block;
@@ -75,6 +79,8 @@
       font-weight: 700; }
     .developer-profile-section .right h4 {
       color: #6B6A6A; }
+    .developer-profile-section .right p {
+      text-align: justify; }
   @media (max-width: 768px) {
     .developer-profile-section {
       grid-template-columns: 1fr;
