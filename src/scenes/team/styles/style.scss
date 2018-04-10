@@ -36,14 +36,21 @@
   padding-left: $PADDING_LEFT;
   padding-right: $PADDING_RIGHT;
 
-  .display-cell {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-    @include breakpoint(xs) {
+  .display-section {
+    @include breakpoint(sm) {
       flex-direction: column;
+    }
+
+    @include breakpoint(md) {
+      display: grid;
+      grid-template-areas: "a b" "c d";
+    }
+
+    @include breakpoint(lg) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
     }
   }
 }
