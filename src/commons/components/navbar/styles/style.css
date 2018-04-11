@@ -4,7 +4,7 @@
   font-family: "Roboto", sans-serif;
   color: #333333;
   font-weight: 700; }
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     .theme__section-header {
       font-size: 2.5em; } }
   @media (min-width: 992px) {

@@ -39,7 +39,7 @@ $PADDING_BOTTOM: 5%;
 }
 
 @mixin section-header-font-size {
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     font-size: 2.5em;
   }
   @media (min-width: 992px) {
