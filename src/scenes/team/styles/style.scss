@@ -1,11 +1,14 @@
 @import "commons/theme/styles/theme";
 
 .acknowledgement {
+  display: flex;
+  flex-direction: column;
   padding: $PADDING_TOP $PADDING_LEFT;
   text-align: justify;
 
   @include breakpoint(xs) {
     min-height: 100vh;
+    justify-content: center;
   }
 }
 

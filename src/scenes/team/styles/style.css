@@ -1,26 +1,28 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i");
 @import url("https://fonts.googleapis.com/css?family=Jaldi:400,700");
 .theme__section-header {
-  font-family: "Lato";
+  font-family: "Roboto", sans-serif;
   color: #333333;
-  font-size: 2em;
   font-weight: 700; }
   @media (min-width: 768px) {
     .theme__section-header {
-      font-size: 3em; } }
+      font-size: 2.5em; } }
   @media (min-width: 992px) {
     .theme__section-header {
-      font-size: 4em; } }
+      font-size: 3.5em; } }
 
 .theme__section-subheader {
   color: #6B6A6A; }
 
 .acknowledgement {
+  display: flex;
+  flex-direction: column;
   padding: 5% 10%;
   text-align: justify; }
   @media (max-width: 576px) {
     .acknowledgement {
-      min-height: 100vh; } }
+      min-height: 100vh;
+      justify-content: center; } }
 
 .advisor-profile-cell img {
   display: block;
@@ -29,13 +31,13 @@
 
 .advisor-profile-cell h3 {
   text-align: center;
-  font-family: "Lato";
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   color: #333333; }
 
 .advisor-profile-cell h5 {
   text-align: center;
-  font-family: "Lato";
+  font-family: "Roboto", sans-serif;
   color: #6B6A6A; }
 
 .advisors {
@@ -80,7 +82,7 @@
     flex-direction: column; }
     .developer-profile-section .right h1 {
       color: #333333;
-      font-family: "Lato";
+      font-family: "Roboto", sans-serif;
       font-weight: 700; }
     .developer-profile-section .right h4 {
       color: #6B6A6A; }

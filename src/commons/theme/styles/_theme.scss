@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
 @import url('https://fonts.googleapis.com/css?family=Jaldi:400,700');
 
-$FONT_FORMAL: 'Lato';
+$FONT_FORMAL: 'Roboto', sans-serif;
 $FONT_CASUAL: 'Jaldi';
 $FONT_WEIGHT_BOLD: 700;
 
@@ -39,13 +39,11 @@ $PADDING_BOTTOM: 5%;
 }
 
 @mixin section-header-font-size {
-  font-size: 2em;
-  // @media (max-width: 767px) {@content;}
   @media (min-width: 768px) {
-    font-size: 3em;
+    font-size: 2.5em;
   }
   @media (min-width: 992px) {
-    font-size: 4em;
+    font-size: 3.5em;
   }
 }
 
