@@ -14,14 +14,16 @@
 .theme__section-subheader {
   color: #6B6A6A; }
 
-.navigation-bar .navbar {
+.navigation-bar {
+  padding: 0 10%;
   background-color: #333333; }
-
-.navigation-bar .navbar-toggler {
-  border-color: #2FB1AE; }
-
-.navigation-bar .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(47,177,174, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
+  .navigation-bar .navbar-toggler {
+    border-color: #2FB1AE; }
+  .navigation-bar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(47,177,174, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
+  @media (max-width: 576px) {
+    .navigation-bar {
+      padding: 0; } }
 
 .nav-item span {
   color: #11A09B;
