@@ -12,18 +12,16 @@ export default class HomeBanner extends Component {
   render() {
     return (
       <div class="home-banner">
-        <div class="left">
+        <div class="box">
           <img src={softwareBox} />
         </div>
-        <div class="right">
-          <div class="text">
-            <p class="desc-top">A reliant companion</p>
-            <p class="desc-middle">STATIC PROGRAM ANALYZER</p>
-            <p class="desc-bottom">simple solution for <span>SIMPLE</span> program</p>
-          </div>
-          <div class="button-area">
-            <ViewOnGitHubButton />{/*to put a dl button instead*/}
-          </div>
+        <div class="text">
+          <p class="desc-top">A RELIANT COMPANION</p>
+          <p class="desc-middle">STATIC PROGRAM ANALYZER</p>
+          <p class="desc-bottom">simple solution for <span>SIMPLE</span> program</p>
+        </div>
+        <div class="button-area">
+          <ViewOnGitHubButton />{/*to put a dl button instead*/}
         </div>
       </div>
     );
