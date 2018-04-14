@@ -80,12 +80,13 @@
         text-align: center;
         align-self: flex-end; }
         .home-banner .text .desc-top {
-          font-size: 4vw; }
+          font-size: 4.5vw; }
         .home-banner .text .desc-middle {
-          font-size: 8vw; }
+          font-size: 9vw; }
         .home-banner .text .desc-bottom {
           font-size: 3.5vw; }
       .home-banner .button-area {
+        display: none;
         grid-row: 2;
         grid-column: 3 / 6;
         visibility: hidden; } }
