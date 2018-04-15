@@ -58,3 +58,8 @@
 .project-summary {
   padding: 5% 10%;
   text-align: justify; }
+
+.skills-tools {
+  padding: 5% 10%;
+  display: flex;
+  flex-wrap: wrap; }

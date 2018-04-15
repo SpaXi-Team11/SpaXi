@@ -56,3 +56,9 @@
   padding: $PADDING_TOP $PADDING_LEFT;
   text-align: justify;
 }
+
+.skills-tools {
+  padding: $PADDING_TOP $PADDING_LEFT;
+  display: flex;
+  flex-wrap: wrap;
+}
