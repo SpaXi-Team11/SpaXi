@@ -46,6 +46,9 @@ $PADDING_BOTTOM: 5%;
   @else if $size == lg {
     @media (min-width: 992px) {@content;}
   }
+  @else if $size == lg-below {
+    @media (max-width: 992px) {@content;}
+  }
   @else if $size == xl {
     @media (min-width: 1200px) {@content;}
   }

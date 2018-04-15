@@ -127,7 +127,7 @@
     }
   }
 
-  @include breakpoint(sm) {
+  @include breakpoint(lg-below) {
     display: flex;
     flex-direction: column;
 
