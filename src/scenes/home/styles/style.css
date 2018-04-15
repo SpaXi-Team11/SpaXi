@@ -16,10 +16,6 @@
 
 .home-banner {
   background: radial-gradient(farthest-corner at 80% 80%, #51C6C2, white);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
   height: 100vh;
   width: auto;
   padding-right: 10%;
@@ -93,7 +89,28 @@
 
 .selling-points {
   min-height: 100vh;
-  background: linear-gradient(to bottom, #2FB1AE, white); }
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-content: center;
+  padding: 5% 10%; }
+  .selling-points div {
+    padding: 0 10%; }
+    .selling-points div img {
+      display: block;
+      margin: auto; }
+    .selling-points div h2 {
+      padding-top: 5%;
+      text-align: center; }
+    .selling-points div p {
+      text-align: justify; }
+  @media (max-width: 768px) {
+    .selling-points {
+      display: flex;
+      flex-direction: column; }
+      .selling-points div {
+        padding: 5%; } }
 
 .member-section {
   display: grid;
@@ -102,7 +119,8 @@
   justify-content: center;
   padding-top: 5%;
   padding-bottom: 5%;
-  min-height: 100vh; }
+  min-height: 100vh;
+  background-color: #51C6C2; }
   .member-section h1 {
     grid-area: title;
     color: #6B6A6A;

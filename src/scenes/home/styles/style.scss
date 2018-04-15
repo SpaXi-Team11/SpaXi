@@ -2,10 +2,6 @@
 
 .home-banner {
   background: radial-gradient(farthest-corner at 80% 80%, #51C6C2, white);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
   height:100vh;
   width: auto;
   padding-right: $PADDING_RIGHT;
@@ -109,7 +105,36 @@
 
 .selling-points {
   min-height: 100vh;
-  background: linear-gradient(to bottom, $COLOR_BRAND_GREEN, white);
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-content: center;
+  padding: $PADDING_TOP $PADDING_LEFT;
+
+  div {
+    padding: 0 $PADDING_LEFT;
+    img {
+      display: block;
+      margin: auto;
+    }
+    h2 {
+      padding-top: $PADDING_TOP;
+      text-align: center;
+    }
+    p {
+      text-align: justify;
+    }
+  }
+
+  @include breakpoint(sm) {
+    display: flex;
+    flex-direction: column;
+
+    div {
+      padding: $PADDING_TOP;
+    }
+  }
 }
 
 .member-section {
@@ -123,6 +148,7 @@
   padding-top:$PADDING_TOP;
   padding-bottom: $PADDING_BOTTOM;
   min-height: 100vh;
+  background-color: $COLOR_BRAND_FAINT_LIGHT_GREEN;
 
   h1 {
     grid-area: title;
