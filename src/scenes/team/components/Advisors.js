@@ -22,7 +22,7 @@ export default class Advisors extends Component {
           <AdvisorProfileCell image={zhaoJin} name="Dr. Zhao Jin" designature="Lecturer" />
           <AdvisorProfileCell image={cristina} name="Dr. Cristina Carbunaru" designature="Lecturer" />
           <AdvisorProfileCell image={thilina} name="Thilina" designature="Teaching Assistant" />
-          <AdvisorProfileCell image={parvathy} name="Parvathy" designature="Teaching Assistant" />
+          <AdvisorProfileCell image={parvathy} name="Parvathy Pillai" designature="Teaching Assistant" />
           <AdvisorProfileCell image={rayyan} name="Ang Ray Yan" designature="Technical Support" />
         </div>
       </div>

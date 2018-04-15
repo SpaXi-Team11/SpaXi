@@ -73,3 +73,7 @@ $PADDING_BOTTOM: 5%;
 .theme__section-subheader {
   color: $COLOR_BRAND_DARK_GREY;
 }
+
+::selection {
+  background: $COLOR_BRAND_LIGHT_GREEN;
+}
