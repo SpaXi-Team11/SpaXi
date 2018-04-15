@@ -10,7 +10,11 @@ export default class Acknowledgement extends Component {
     return (
       <div className="acknowledgement">
         <h1 className="theme__section-header">Acknowledgement</h1>
-        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+        <p>We would like to express our deepest gratitude to Dr. Zhao Jin and Dr. Cristina Carbunaru for coaching us in this module. Their enthusiasm and creative way of teaching has given us a new perspective in learning software engineering and its practices.<br />
+           We would also like to thank Mr. Thilina and Ms. Parvathy for their valuable and constructive suggestions throughout the whole duration of this project. Their patience, support and encouragement pulled us through this tough module.<br />
+           We would also like to extend our thanks to Mr. Ang Ray Yan for his valuable technical advices and assistance. His unconditional help and willingness to stay till late night despite being busy has been very much appreciated.<br />
+           Finally, we wish to thank NUS School of Computing for giving us a chance to enrol in this module.
+        </p>
       </div>
     );
   }

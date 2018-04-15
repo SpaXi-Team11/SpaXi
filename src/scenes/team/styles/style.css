@@ -51,7 +51,7 @@
   @media (min-width: 769px) {
     .advisors .display-section {
       display: grid;
-      grid-template-areas: "a b" "c d"; } }
+      grid-template-areas: "a b" "c d" "e f"; } }
   @media (min-width: 992px) {
     .advisors .display-section {
       display: flex;

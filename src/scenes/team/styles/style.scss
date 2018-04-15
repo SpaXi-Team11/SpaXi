@@ -46,7 +46,7 @@
 
     @include breakpoint(md) {
       display: grid;
-      grid-template-areas: "a b" "c d";
+      grid-template-areas: "a b" "c d" "e f";
     }
 
     @include breakpoint(lg) {
